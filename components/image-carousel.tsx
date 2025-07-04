@@ -3,49 +3,12 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
+import { ImageCarouselProps } from "@/types/carrousel"
+import { internalImages } from "@/data/imagesCarrousel"
 
-interface GalleryImage {
-  src: string
-  alt: string
-  title: string
-}
-
-interface ImageCarouselProps {
-  images?: GalleryImage[]
-  currentIndex?: number
-  setCurrentIndex?: (index: number) => void
-}
 
 export function ImageCarousel({ images, currentIndex, setCurrentIndex }: ImageCarouselProps) {
   const [internalCurrentIndex, setInternalCurrentIndex] = useState(0)
-  const [internalImages] = useState<GalleryImage[]>([
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Interior del salón Milenas Nails",
-      title: "Nuestro hermoso salón",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Diseño de uñas elegante",
-      title: "Diseños únicos",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Manicura profesional",
-      title: "Atención profesional",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Nail art decorativo",
-      title: "Arte en tus uñas",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Ambiente relajante",
-      title: "Ambiente de relajación",
-    },
-  ])
-
   const galleryImages = images || internalImages
   const currentImageIndex = currentIndex !== undefined ? currentIndex : internalCurrentIndex
   const setCurrentImageIndex = setCurrentIndex || setInternalCurrentIndex

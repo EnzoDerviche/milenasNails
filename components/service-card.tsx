@@ -6,11 +6,14 @@ interface ServiceCardProps {
   title: string
   price: string
   originalPrice?: string
-  description: string // Volvemos a description como string
+  subDescription?: string
+  time: string
+  features?: string[]
+  description?: string
   isPopular?: boolean
 }
 
-export function ServiceCard({ icon: Icon, title, price, originalPrice, description, isPopular }: ServiceCardProps) {
+export function ServiceCard({ icon: Icon, title, price, originalPrice, description, isPopular, time, features, subDescription }: ServiceCardProps) {
   return (
     <Card
       className={`${
@@ -33,11 +36,21 @@ export function ServiceCard({ icon: Icon, title, price, originalPrice, descripti
           >
             <Icon className={`w-8 h-8 ${isPopular ? "text-white" : "text-rose-500"}`} />
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-          <div className={`text-3xl font-bold ${isPopular ? "text-rose-600" : "text-rose-500"} mb-1`}>{price}</div>
-          {originalPrice && <div className="text-sm text-gray-500 line-through mb-3">{originalPrice}</div>}
+          <h3 className="text-xl font-bold text-gray-800 mb-1">{title}</h3>
+          <div className={`text-3xl font-bold ${isPopular ? "text-rose-600" : "text-rose-500"}`}>{price}</div>
+          {originalPrice && <div className="text-sm text-gray-500 line-through mb-2">{originalPrice}</div>}
         </div>
+        <p className="text-gray-600 text-sm leading-relaxed text-center font-bold mb-2">Duracion: {time}</p>
+        <p className="text-gray-600 text-sm leading-relaxed text-center font-bold mb-2">{subDescription}</p>
         <p className="text-gray-600 text-sm leading-relaxed text-center">{description}</p>
+        <ul className="text-gray-600 space-y-2 text-sm mt-4">
+          {features?.map((feature, index) => (
+            <li key={index} className="flex items-start">
+              <span className="text-rose-400 mr-2 mt-0.5">•</span>
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
       </CardContent>
     </Card>
   )
