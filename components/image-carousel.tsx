@@ -70,7 +70,7 @@ export function ImageCarousel({ images, currentIndex, setCurrentIndex }: ImageCa
   }
 
   return (
-    <section className="py-16 px-4 bg-white/50">
+    <section id="galeria" className="py-16 px-4 bg-white/50">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Nuestro Trabajo y Salón</h2>
 

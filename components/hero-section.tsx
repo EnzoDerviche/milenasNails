@@ -7,7 +7,7 @@ import { Star, Sparkles, Instagram } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="py-16 px-4">
+    <section id="inicio" className="py-16 px-4">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="mb-8">
           <Sparkles className="w-12 h-12 text-rose-400 mx-auto mb-4" />
@@ -18,9 +18,8 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Tu salón de uñas de confianza, donde la belleza y el cuidado
-            personal se encuentran. Ofrecemos servicios de manicura, pedicura,
-            nail art y diseños únicos en un ambiente relajante y acogedor.
+            Tu salón de uñas de confianza, donde la belleza y la creatividad se unen. Ofrecemos servicios de manicura, alisados,
+            nail art y diseños únicos en un ambiente acogedor.
           </p>
         </div>
 

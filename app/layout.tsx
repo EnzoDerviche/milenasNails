@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mileas",
-  description: "Milenas Nails Salon",
+  title: "Milenas Nails Salón",
+  description: "Milenas Nails Salón",
 };
 
 export default function RootLayout({
