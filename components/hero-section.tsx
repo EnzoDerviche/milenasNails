@@ -18,8 +18,8 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Tu salón de uñas de confianza, donde la belleza y la creatividad se unen. Ofrecemos servicios de manicura, alisados,
-            nail art y diseños únicos en un ambiente acogedor.
+            Tu studio de uñas de confianza, donde la belleza y la creatividad se unen. Ofrecemos servicios de manicura, alisados,
+            tecnicas de esculpido y diseños únicos en un ambiente acogedor.
           </p>
         </div>
 

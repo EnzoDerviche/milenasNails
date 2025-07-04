@@ -7,6 +7,7 @@ import { ImageCarousel } from "@/components/image-carousel"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { Navigation } from "@/components/navigation"
+import { FloatingSocial } from "@/components/floating-social"
 
 export default function MilenasNailsLanding() {
 
@@ -19,6 +20,7 @@ export default function MilenasNailsLanding() {
       <ImageCarousel />
       <ContactSection/>
       <Footer />
+      <FloatingSocial />
     </div>
   )
 }

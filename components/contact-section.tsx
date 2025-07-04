@@ -67,7 +67,7 @@ export function ContactSection() {
             <Card className="h-full bg-white/70 backdrop-blur-sm border-rose-200">
               <CardContent className="p-0 h-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168903552!2d-58.38375908477!3d-34.60373998045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sAv.%20Corrientes%201234%2C%20C1043AAZ%20CABA!5e0!3m2!1ses!2sar!4v1234567890123"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.6541426368276!2d-58.19077242431528!3d-34.83978737000371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a327fff5dbea3f%3A0xc04df5bfa734cd76!2sC.%20413%2047%2C%20B1890%20Juan%20Mar%C3%ADa%20Guti%C3%A9rrez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1751663957623!5m2!1ses-419!2sar"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: "0.75rem" }}

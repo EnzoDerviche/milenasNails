@@ -11,74 +11,44 @@ export function ServicesSection() {
       icon: Heart,
       title: "Manicura Clásica",
       price: "$8.000",
-      features: [
-        "Limado y forma de uñas",
-        "Cutícula y limpieza profunda",
-        "Esmaltado tradicional",
-        "Hidratación de manos",
-        "Duración: 45 minutos",
-      ],
+      description:
+        "Tratamiento completo de manos con limado, cutícula, esmaltado tradicional e hidratación. Perfecto para mantener tus uñas saludables y hermosas.",
     },
     {
       icon: Sparkles,
       title: "Semipermanente",
       price: "$12.000",
-      features: [
-        "Preparación completa de uñas",
-        "Esmaltado gel de larga duración",
-        "Secado con lámpara UV/LED",
-        "Duración: 3-4 semanas",
-        "Tiempo: 60 minutos",
-      ],
+      description:
+        "Esmaltado de larga duración con gel que mantiene tus uñas perfectas por 3-4 semanas. Incluye preparación completa y secado profesional.",
     },
     {
       icon: Palette,
       title: "Nail Art",
       price: "$15.000",
-      features: [
-        "Diseños personalizados",
-        "Decoraciones con strass",
-        "Técnicas de arte manual",
-        "Esmaltado semipermanente",
-        "Duración: 90 minutos",
-      ],
+      description:
+        "Diseños únicos y personalizados con técnicas artísticas. Desde patrones simples hasta decoraciones elaboradas con strass y detalles especiales.",
     },
     {
       icon: Star,
       title: "Pedicura Spa",
       price: "$10.000",
-      features: [
-        "Baño de pies relajante",
-        "Exfoliación y masaje",
-        "Tratamiento de cutículas",
-        "Esmaltado tradicional",
-        "Duración: 75 minutos",
-      ],
+      description:
+        "Experiencia relajante para tus pies con baño, exfoliación, masaje y esmaltado. El cuidado perfecto para lucir pies suaves y hermosos.",
     },
     {
       icon: Crown,
       title: "Kapping",
       price: "$18.000",
-      features: [
-        "Extensión de uñas con tips",
-        "Esculpido y forma perfecta",
-        "Esmaltado semipermanente",
-        "Diseño básico incluido",
-        "Duración: 2 horas",
-      ],
+      description:
+        "Extensión profesional de uñas con tips de alta calidad. Esculpido perfecto con esmaltado semipermanente y diseño básico incluido.",
     },
     {
       icon: Sparkles,
       title: "Combo Completo",
       price: "$20.000",
       originalPrice: "$28.000",
-      features: [
-        "Manicura + Pedicura",
-        "Esmaltado semipermanente",
-        "Diseño simple incluido",
-        "Hidratación completa",
-        "Duración: 2.5 horas",
-      ],
+      description:
+        "La experiencia completa: manicura y pedicura con esmaltado semipermanente. Incluye diseño simple e hidratación total de manos y pies.",
       isPopular: true,
     },
   ]

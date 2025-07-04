@@ -6,11 +6,11 @@ interface ServiceCardProps {
   title: string
   price: string
   originalPrice?: string
-  features: string[]
+  description: string // Volvemos a description como string
   isPopular?: boolean
 }
 
-export function ServiceCard({ icon: Icon, title, price, originalPrice, features, isPopular }: ServiceCardProps) {
+export function ServiceCard({ icon: Icon, title, price, originalPrice, description, isPopular }: ServiceCardProps) {
   return (
     <Card
       className={`${
@@ -37,11 +37,7 @@ export function ServiceCard({ icon: Icon, title, price, originalPrice, features,
           <div className={`text-3xl font-bold ${isPopular ? "text-rose-600" : "text-rose-500"} mb-1`}>{price}</div>
           {originalPrice && <div className="text-sm text-gray-500 line-through mb-3">{originalPrice}</div>}
         </div>
-        <ul className="text-gray-600 space-y-2 text-sm">
-          {features.map((feature, index) => (
-            <li key={index}>• {feature}</li>
-          ))}
-        </ul>
+        <p className="text-gray-600 text-sm leading-relaxed text-center">{description}</p>
       </CardContent>
     </Card>
   )
