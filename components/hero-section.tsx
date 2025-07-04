@@ -71,11 +71,10 @@ export function HeroSection() {
           Reservar Cita por WhatsApp
         </Button>
         <Button
-          onClick={openWhatsApp}
           className="bg-gradient-to-r mt-5 from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
         >
           <a
-            href="https://instagram.com/milenas.nailss"
+            href="https://instagram.com/milenas.nails"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
