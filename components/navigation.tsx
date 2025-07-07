@@ -55,6 +55,7 @@ export function Navigation() {
   const menuItems = [
     { label: "Inicio", sectionId: "inicio" },
     { label: "Servicios", sectionId: "servicios" },
+    { label: "Turnos", sectionId: "turnos" },
     { label: "Galería", sectionId: "galeria" },
     { label: "Contacto", sectionId: "contacto" },
   ]
@@ -103,7 +104,7 @@ export function Navigation() {
         {/* Menú móvil */}
         <div
           className={`md:hidden transition-all duration-500 ease-in-out ${
-            isMenuOpen ? "max-h-64 opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-2"
+            isMenuOpen ? "max-h-80 opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-2"
           } overflow-hidden`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg border border-rose-100">

@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { Navigation } from "@/components/navigation"
 import { FloatingSocial } from "@/components/floating-social"
+import { AppointmentsSection } from "@/components/appointments-section"
 
 export default function MilenasNailsLanding() {
 
@@ -17,6 +18,7 @@ export default function MilenasNailsLanding() {
       <Header />
       <HeroSection/>
       <ServicesSection/>
+      <AppointmentsSection />
       <ImageCarousel />
       <ContactSection/>
       <Footer />
