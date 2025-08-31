@@ -10,7 +10,7 @@ export function ServicesSection() {
   {
     icon: Heart,
     title: "Manicura Rusa",
-    price: "$10.000",
+    price: "$11.000",
     time: "45 min",
     description:
       "Uso del torno en su totalidad. Permite trabajar las uñas y cutículas con precisión y seguridad. Se enfoca en la limpieza profunda.",
@@ -18,7 +18,7 @@ export function ServicesSection() {
   {
     icon: Sparkles,
     title: "Semipermanente",
-    price: "$15.000",
+    price: "$17.000",
     time: "1h 15 min",
     description:
       "Esmaltado de secado inmediato y de larga duración. Se aplica un esmalte específico y se seca con lámpara UV o LED. Su duración es de 2 a 3 semanas.",
@@ -26,7 +26,7 @@ export function ServicesSection() {
   {
     icon: Brush,
     title: "Capping con base Rubber",
-    price: "$18.000",
+    price: "$20.000",
     time: "1h 30 min",
     description:
       "Aplicación de una capa de gel sobre la uña que actúa como barrera protectora. Ayuda a que la uña crezca sin romperse, ideal para uñas débiles. A diferencia de las uñas esculpidas, este servicio no alarga la uña, sino que acompaña su crecimiento. Su duración es de 2 a 3 semanas.",
@@ -34,7 +34,7 @@ export function ServicesSection() {
   {
     icon: Star,
     title: "Capping con Polygel",
-    price: "$20.000",
+    price: "$22.000",
     time: "1h 45 min",
     description:
       "Aplicación de una capa de polygel sobre la uña. A diferencia del gel, este material es más rígido y resistente, ideal para uñas que necesitan mayor soporte. Este servicio no alarga la uña, sino que acompaña su crecimiento. Su duración es de 2 a 3 semanas.",
@@ -42,7 +42,7 @@ export function ServicesSection() {
   {
     icon: Crown,
     title: "Uñas Esculpidas en Polygel",
-    price: "$22.000",
+    price: "$25.000",
     subDescription: "(N1 y N2) $1.500 adicionales por largo de uña",
     time: "2h 15 min",
     isPopular: true,
