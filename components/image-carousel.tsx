@@ -33,9 +33,9 @@ export function ImageCarousel({ images, currentIndex, setCurrentIndex }: ImageCa
   }
 
   return (
-    <section id="galeria" className="py-16 px-4 bg-white/50">
+    <section id="galeria" className="py-16 px-4 bg-[#f8f3ec]/70">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Nuestro Trabajo y Salón</h2>
+        <h2 className="text-3xl font-bold text-center text-[#5f4632] mb-12">Nuestro Trabajo y Salón</h2>
 
         <div className="relative">
           <div className="overflow-hidden rounded-2xl shadow-2xl">
@@ -55,14 +55,14 @@ export function ImageCarousel({ images, currentIndex, setCurrentIndex }: ImageCa
 
           <button
             onClick={prevImage}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/85 hover:bg-white text-[#6e5743] p-3 rounded-full shadow-lg transition-all duration-300"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
 
           <button
             onClick={nextImage}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/85 hover:bg-white text-[#6e5743] p-3 rounded-full shadow-lg transition-all duration-300"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -73,7 +73,7 @@ export function ImageCarousel({ images, currentIndex, setCurrentIndex }: ImageCa
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentImageIndex ? "bg-rose-400 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                  index === currentImageIndex ? "bg-[#b88f6a] scale-125" : "bg-[#d7c4af] hover:bg-[#c5ac92]"
                 }`}
               />
             ))}

@@ -61,14 +61,14 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-[#eadfce]">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Nombre del salón */}
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-xl font-bold bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent hover:from-rose-500 hover:to-pink-600 transition-all duration-300"
+              className="text-xl font-bold bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] bg-clip-text text-transparent hover:from-[#b88f6a] hover:to-[#a97d57] transition-all duration-300"
             >
               Milenas Nails
             </button>
@@ -81,10 +81,10 @@ export function Navigation() {
                 <button
                   key={item.sectionId}
                   onClick={() => scrollToSection(item.sectionId)}
-                  className="text-gray-700 hover:text-rose-500 px-3 py-2 text-sm font-medium transition-all duration-300 hover:bg-rose-50 rounded-lg relative group"
+                  className="text-[#6e5743] hover:text-[#9f7a58] px-3 py-2 text-sm font-medium transition-all duration-300 hover:bg-[#f3e9dc] rounded-lg relative group"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-400 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
             </div>
@@ -94,7 +94,7 @@ export function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-rose-500 p-2 rounded-lg transition-all duration-300 hover:bg-rose-50"
+              className="text-[#6e5743] hover:text-[#9f7a58] p-2 rounded-lg transition-all duration-300 hover:bg-[#f3e9dc]"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -107,12 +107,12 @@ export function Navigation() {
             isMenuOpen ? "max-h-80 opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-2"
           } overflow-hidden`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg border border-rose-100">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-sm rounded-lg mt-2 shadow-lg border border-[#eadfce]">
             {menuItems.map((item, index) => (
               <button
                 key={item.sectionId}
                 onClick={() => scrollToSection(item.sectionId)}
-                className="text-gray-700 hover:text-rose-500 block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 hover:bg-rose-50 rounded-lg transform hover:translate-x-1"
+                className="text-[#6e5743] hover:text-[#9f7a58] block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 hover:bg-[#f3e9dc] rounded-lg transform hover:translate-x-1"
                 style={{
                   animationDelay: `${index * 50}ms`,
                   animation: isMenuOpen ? `slideIn 0.3s ease-out ${index * 50}ms both` : "none",

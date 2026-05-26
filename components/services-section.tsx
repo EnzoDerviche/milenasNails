@@ -80,15 +80,15 @@ export function ServicesSection() {
 ];
 
   return (
-    <section id="servicios" className="py-16 px-4 bg-white/30">
+    <section id="servicios" className="py-16 px-4 bg-[#f8f3ec]/80">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <Palette className="w-12 h-12 text-rose-400 mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <Palette className="w-12 h-12 text-[#b88f6a] mx-auto mb-4" />
+          <h2 className="text-3xl md:text-4xl font-bold text-[#5f4632] mb-4">
             Nuestros{" "}
-            <span className="bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent">Servicios</span>
+            <span className="bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] bg-clip-text text-transparent">Servicios</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#7a634f] max-w-2xl mx-auto">
             Descubre nuestra amplia gama de servicios diseñados para realzar tu belleza natural
           </p>
         </div>
@@ -100,10 +100,10 @@ export function ServicesSection() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-6">¿Necesitas algo específico? Consultanos por servicios personalizados</p>
+          <p className="text-[#7a634f] mb-6">¿Necesitas algo específico? Consultanos por servicios personalizados</p>
           <Button
             onClick={openWhatsApp}
-            className="bg-gradient-to-r from-rose-400 to-pink-500 hover:from-rose-500 hover:to-pink-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] hover:from-[#b88f6a] hover:to-[#a97d57] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Consultar Precios Personalizados
           </Button>

@@ -17,9 +17,9 @@ export function AppointmentsSection() {
         "Proporcionar nombre completo y número de contacto",
         "Enviar comprobante de pago de la seña por WhatsApp",
       ],
-      color: "text-green-600",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200",
+      color: "text-[#8b6a4f]",
+      bgColor: "bg-[#f8f1e8]",
+      borderColor: "border-[#e7d8c6]",
     },
     {
       icon: Clock,
@@ -30,9 +30,9 @@ export function AppointmentsSection() {
         "Pasados los 15 minutos, el turno queda cancelado, sin reembolso de la seña",
         "En caso de retraso, comunicarse inmediatamente",
       ],
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200",
+      color: "text-[#7d6248]",
+      bgColor: "bg-[#f4eadf]",
+      borderColor: "border-[#dfccb7]",
     },
     {
       icon: XCircle,
@@ -42,9 +42,9 @@ export function AppointmentsSection() {
         "La seña es contemplada solo en el caso de cancelación con 24 horas de anticipación",
         "La seña solo reserva el turno deseado, y no congela el valor del servicio",
       ],
-      color: "text-red-600",
-      bgColor: "bg-red-50",
-      borderColor: "border-red-200",
+      color: "text-[#926f53]",
+      bgColor: "bg-[#f7ede3]",
+      borderColor: "border-[#e3cfba]",
     },
     {
       icon: AlertCircle,
@@ -54,22 +54,22 @@ export function AppointmentsSection() {
         "El pago se realiza al finalizar el servicio",
         "No se permite asistir con niños o acompañantes",
       ],
-      color: "text-amber-600",
-      bgColor: "bg-amber-50",
-      borderColor: "border-amber-200",
+      color: "text-[#6f5741]",
+      bgColor: "bg-[#efe1d2]",
+      borderColor: "border-[#d5bca3]",
     },
   ]
 
   return (
-    <section id="turnos" className="py-16 px-4 bg-gradient-to-br from-rose-50 to-pink-50">
+    <section id="turnos" className="py-16 px-4 bg-gradient-to-br from-[#f6efe6] to-[#eee0cf]">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <Calendar className="w-12 h-12 text-rose-400 mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <Calendar className="w-12 h-12 text-[#b88f6a] mx-auto mb-4" />
+          <h2 className="text-3xl md:text-4xl font-bold text-[#5f4632] mb-4">
             Reserva tu{" "}
-            <span className="bg-gradient-to-r from-rose-400 to-pink-500 bg-clip-text text-transparent">Turno</span>
+            <span className="bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] bg-clip-text text-transparent">Turno</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[#7a634f] max-w-2xl mx-auto">
             Conoce nuestras políticas para una mejor experiencia en tu cita
           </p>
         </div>
@@ -94,7 +94,7 @@ export function AppointmentsSection() {
                   {policy.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
                       <CheckCircle className={`w-4 h-4 ${policy.color} mr-3 mt-0.5 flex-shrink-0`} />
-                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                      <span className="text-[#6e5743] text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -103,11 +103,11 @@ export function AppointmentsSection() {
           ))}
         </div>
 
-        <Card className="bg-gradient-to-r from-rose-100 to-pink-100 border-rose-200 border-2">
+        <Card className="bg-gradient-to-r from-[#efe1d2] to-[#e7d5c2] border-[#d9c2aa] border-2">
           <CardContent className="p-8 text-center">
-            <Phone className="w-16 h-16 text-rose-500 mx-auto mb-6" />
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">¿Lista para tu cita?</h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            <Phone className="w-16 h-16 text-[#9f7a58] mx-auto mb-6" />
+            <h3 className="text-2xl font-bold text-[#5f4632] mb-4">¿Lista para tu cita?</h3>
+            <p className="text-[#7a634f] mb-6 max-w-2xl mx-auto">
               Reserva tu turno ahora y disfruta de nuestros servicios profesionales. Nuestro equipo está listo para
               brindarte la mejor atención.
             </p>
@@ -115,7 +115,7 @@ export function AppointmentsSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={openWhatsApp}
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
+                className="bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] hover:from-[#b88f6a] hover:to-[#a97d57] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 Reservar por WhatsApp

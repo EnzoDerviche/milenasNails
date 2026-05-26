@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-rose-400 to-pink-500 text-white py-8">
+    <footer className="bg-gradient-to-r from-[#c9a27e] to-[#b88f6a] text-white py-8">
       <div className="container mx-auto px-4">
         {/* Layout responsivo: vertical en móvil, horizontal en desktop */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -12,7 +12,7 @@ export function Footer() {
             href="https://instagram.com/milenas.nailss"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-rose-200 transition-colors duration-300 order-last md:order-none"
+            className="hover:text-[#f5e6d5] transition-colors duration-300 order-last md:order-none"
           >
             <Instagram className="w-8 h-8" />
           </a>

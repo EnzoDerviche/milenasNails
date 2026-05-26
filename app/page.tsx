@@ -13,7 +13,7 @@ import { AppointmentsSection } from "@/components/appointments-section"
 export default function MilenasNailsLanding() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-rose-100">
+    <div className="min-h-screen bg-gradient-to-br from-[#faf6f0] via-[#faf6f0] to-[#faf6f0]">
       <Navigation />
       <Header />
       <HeroSection/>
