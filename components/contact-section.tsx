@@ -19,11 +19,7 @@ export function ContactSection() {
                   <MapPin className="w-6 h-6 text-[#b88f6a] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-[#5f4632] mb-2">Dirección</h3>
-                    <p className="text-[#7a634f]">
-                      Calle 413 n47, Piso 1, Depto 5<br />
-                      Juan Maria Gutierrez, Berazategui<br />
-                      (Rotonda de Alpargatas)
-                    </p>
+                    <p className="text-[#7a634f]">Calle 413A n367, Juan Maria Gutierrez, Berazategui</p>
                   </div>
                 </div>
               </CardContent>
